@@ -1,1 +1,24 @@
-<h1>Bestlam Doors Listing! Coming Soon...</h1>
+<div class="container">
+    <h2 class="text-center">Door Designs</h2>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (design of doorDesigns; track design.name) {
+                <tr>
+                    <td>{{ design.designNumber }}</td>
+                    <td>{{ design.name }}</td>
+                    <td><img [src]="design.img" alt="{{ design.name }}" width="100"></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
