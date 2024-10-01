@@ -15,7 +15,11 @@
                 <tr>
                     <td>{{ design.designNumber }}</td>
                     <td>{{ design.name }}</td>
-                    <td><img [src]="design.img" alt="{{ design.name }}" width="100"></td>
+                    <td>
+                        <a href="{{ design.img }}">
+                            <img class="img-thumbnail" [src]="design.img" alt="{{ design.name }}" width="100">
+                        </a>
+                    </td>
                 </tr>
                 }
             </tbody>
