@@ -10,34 +10,74 @@ import { Component } from '@angular/core';
 export class BestlamDoorsListingComponent {
   doorDesigns = [
     {
-      designNumber: 100,
-      name: 'Classic Oak',
-      img: './assets/bestlam/100.png',
+      designNumber: 'BL101',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL101.JPG',
     },
     {
-      designNumber: 101,
-      name: 'Classic Oak',
-      img: './assets/bestlam/101.png',
+      designNumber: 'BL102',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL102.JPG',
     },
     {
-      designNumber: 102,
-      name: 'Classic Oak',
-      img: './assets/bestlam/102.png',
+      designNumber: 'BL103',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL103.JPG',
     },
     {
-      designNumber: 103,
-      name: 'Classic Oak',
-      img: './assets/bestlam/103.png',
+      designNumber: 'BL104',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL104.JPG',
     },
     {
-      designNumber: 104,
-      name: 'Classic Oak',
-      img: './assets/bestlam/104.png',
+      designNumber: 'BL105',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL105.JPG',
     },
     {
-      designNumber: 105,
-      name: 'Classic Oak',
-      img: './assets/bestlam/105.png',
+      designNumber: 'BL106',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL106.JPG',
+    },
+    {
+      designNumber: 'BL107',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL107.JPG',
+    },
+    {
+      designNumber: 'BL108',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL108.JPG',
+    },
+    {
+      designNumber: 'BL109',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL109.JPG',
+    },
+    {
+      designNumber: 'BL110',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL110.JPG',
+    },
+    {
+      designNumber: 'BL111',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL111.JPG',
+    },
+    {
+      designNumber: 'BL112',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL112.JPG',
+    },
+    {
+      designNumber: 'BL113',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL113.JPG',
+    },
+    {
+      designNumber: 'BL114',
+      name: 'Wood Grens',
+      img: './assets/bestlam/BL114.JPG',
     },
   ];
 }
