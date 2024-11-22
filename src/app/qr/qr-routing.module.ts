@@ -14,13 +14,23 @@ const routes: Routes = [
     path: 'bestlam-doors',
     pathMatch: 'full',
     redirectTo: 'bestlam-doors/listing',
-    // component: QrComponent,
+  },
+  {
+    path: 'shakti-doors/listing',
+    loadComponent: () =>
+      import('./shakti-doors-listing/shakti-doors-listing.component').then(
+        (m) => m.ShaktiDoorsListingComponent
+      ),
+  },
+  {
+    path: 'shakti-doors',
+    pathMatch: 'full',
+    redirectTo: 'shakti-doors/listing',
   },
   {
     path: '',
     pathMatch: 'full',
     redirectTo: 'bestlam-doors/listing',
-    // component: QrComponent,
   },
 ];
 
