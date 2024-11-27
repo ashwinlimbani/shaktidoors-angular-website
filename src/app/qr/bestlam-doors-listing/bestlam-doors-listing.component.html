@@ -1,12 +1,15 @@
 <div class="container">
-    <h2 class="text-center">Door Designs</h2>
+    <div class="logo-container">
+        <img class="logo" src="./assets/bestlam/bestlam-logo.jpg">
+        <h2 class="text-center m-0"> BESTLAM DOORS </h2>
+        <div></div>
+    </div>
 
     <div class="table-responsive">
-        <table class="table table-bordered">
+        <table class="table table-bordered m-auto">
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Name</th>
                     <th>Image</th>
                 </tr>
             </thead>
@@ -14,15 +17,19 @@
                 @for (design of doorDesigns; track design.name) {
                 <tr>
                     <td>{{ design.designNumber }}</td>
-                    <td>{{ design.name }}</td>
                     <td>
                         <a href="{{ design.img }}">
-                            <img class="img-thumbnail" [src]="design.webImg" alt="{{ design.name }}" width="100">
+                            <img class="img-thumbnail doors" [src]="design.webImg" alt="{{ design.name }}" width="100">
                         </a>
                     </td>
                 </tr>
                 }
             </tbody>
         </table>
+    </div>
+
+    <div class="d-flex justify-content-between mt-4 mb-2">
+        <span><strong>Note:</strong> 8 x 4 cut paste designs.</span>
+        <span>Contact: <a class="contact-link" href="tel:+919035626296">+91 90356 26296</a></span>
     </div>
 </div>
