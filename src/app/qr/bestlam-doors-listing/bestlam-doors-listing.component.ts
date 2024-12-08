@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { AnimationOptions, LottieComponent } from 'ngx-lottie';
 
 @Component({
   selector: 'app-bestlam-doors-listing',
   standalone: true,
-  imports: [],
+  imports: [LottieComponent],
   templateUrl: './bestlam-doors-listing.component.html',
   styleUrl: './bestlam-doors-listing.component.scss',
 })
@@ -94,4 +95,9 @@ export class BestlamDoorsListingComponent {
       webImg: './assets/bestlam/web/BL114.jpg',
     },
   ];
+
+  whatsappOptions: AnimationOptions = {
+    path: 'https://assets8.lottiefiles.com/packages/lf20_6yIUKcHwko.json',
+    autoplay: true,
+  };
 }
