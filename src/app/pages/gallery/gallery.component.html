@@ -1,40 +1,61 @@
 <!-- banner start  -->
-<section class="banner">
+<header class="banner" role="banner">
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-center">
                 <div class="banner-content">
-                    <h2>Product Gallery</h2>
-                    <h3 class="d-flex justify-center">
-                        <a routerLink="/">Home</a>&nbsp;
-                        <span>/</span>&nbsp;
-                        <span>Product Gallery</span>
-                    </h3>
+                    <h1>Premium Door Designs Gallery</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb d-flex justify-center">
+                            <li class="breadcrumb-item"><a routerLink="/" aria-label="Home">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Product Gallery</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</header>
 <!-- banner end  -->
 
 <!-- gallery section -->
-<section class="range">
+<main class="range" role="main">
     <div class="container">
         <div class="row justify-center">
             <div class="title col-7">
-                <h2>Our Products</h2>
-                <p>Premium doors crafted for durability, security, and style, perfect for any space.</p>
+                <h2>Our Premium Collection</h2>
+                <p>Discover our extensive range of premium doors crafted with precision and style. Each design combines durability, security, and aesthetic excellence.</p>
             </div>
         </div>
     </div>
     <div class="container">
-        <section class="img-gallery-magnific">
-            <div class="magnific-img" *ngFor="let image of images">
-                <a class="image-popup-vertical-fit" appMagnificPopup [href]="image.path">
-                    <img [src]="image.path" [alt]="image.title" />
+        <section class="img-gallery-magnific" aria-label="Door Designs Gallery">
+            <div class="magnific-img" *ngFor="let image of images; let i = index">
+                <a class="image-popup-vertical-fit" appMagnificPopup [href]="image.path" [title]="image.title" [attr.aria-label]="'View larger image of ' + image.title">
+                    <img [src]="image.path" [alt]="image.alt" [title]="image.title" loading="lazy" width="300" height="300" />
+                    <meta itemprop="description" [content]="image.description">
                 </a>
             </div>
         </section>
         <div class="clear"></div>
     </div>
-</section>
+</main>
+
+<!-- Schema.org markup for ImageGallery -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "/"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Product Gallery",
+    "item": "/gallery"
+  }]
+}
+</script>
