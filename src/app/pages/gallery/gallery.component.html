@@ -1,0 +1,40 @@
+<!-- banner start  -->
+<section class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-center">
+                <div class="banner-content">
+                    <h2>Product Gallery</h2>
+                    <h3 class="d-flex justify-center">
+                        <a routerLink="/">Home </a>&nbsp;
+                        <br>
+                        <a> / &nbsp; Product Gallery</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner end  -->
+
+<!-- our products  -->
+<section class="range">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="title col-7">
+                <h2>Our Products</h2>
+                <p>Our Product – Premium doors crafted for durability, security, and style, perfect for any space.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img-gallery-magnific">
+            <div class="magnific-img" *ngFor="let image of album; let i = index">
+                <a (click)="open(i)" class="image-popup-vertical-fit">
+                    <img [src]="image.thumb" [alt]="'Door Design ' + (i + 1)">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- our products end -->

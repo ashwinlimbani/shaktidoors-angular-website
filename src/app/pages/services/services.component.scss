@@ -1,0 +1,50 @@
+.banner {
+    padding: 150px 0;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 80% 80%;
+    background-image: url('/assets/images/service-img.png');
+
+    h2 {
+        color: #fff;
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: #00a2e6;
+            }
+        }
+    }
+}
+
+.quesion {
+    padding: 80px 0;
+    background-image: url('/assets/images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .quesion-content {
+        color: #fff;
+
+        i {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    }
+}

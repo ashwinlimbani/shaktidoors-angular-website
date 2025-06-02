@@ -1,0 +1,24 @@
+.banner {
+    padding: 150px 0;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 80% 80%;
+    background-image: url('/assets/images/about.jpg');
+
+    h2 {
+        color: #fff;
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: #00a2e6;
+            }
+        }
+    }
+}

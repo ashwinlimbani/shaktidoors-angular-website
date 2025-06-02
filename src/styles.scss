@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-// @import '~bootstrap/scss/bootstrap';
+@import '../public/assets/css/all.min.css';
+@import '../public/assets/css/stylesheet.css';
+@import '../public/assets/css/style.css';
+@import '../public/assets/css/media.css';
 
 body {
     --bs-body-bg: #fbfaf3 !important;
