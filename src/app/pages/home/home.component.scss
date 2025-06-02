@@ -1,0 +1,163 @@
+.banner {
+    background-image: url('/assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 240px 0;
+    background-attachment: fixed;
+    color: var(--white-color);
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: '';
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(270deg, #00000000 0%, #00000099 70.86%);
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .banner-content {
+        span {
+            font-size: var(--fs-14);
+            text-transform: uppercase;
+            word-spacing: 2px;
+            letter-spacing: 2px;
+            font-weight: var(--fw-700);
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: var(--fs-75);
+            font-weight: var(--fw-700);
+            line-height: 1.1;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: var(--fs-18);
+            color: rgb(192, 192, 192);
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: var(--fs-18);
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            display: inline-block;
+            padding: 17px 30px;
+            border: 1px solid transparent;
+            transition: 0.5s;
+            text-transform: uppercase;
+
+            &:hover {
+                border: 1px solid var(--primary-color);
+                background-color: transparent;
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+.about {
+    padding: 100px 0;
+    background-color: var(--white-color);
+
+    .about-image {
+        padding: 10px 55px 10px;
+        position: relative;
+
+        img {
+            border-radius: 999px 999px 0 0;
+            object-fit: cover;
+        }
+
+        .main-img {
+            position: relative;
+            overflow: hidden;
+
+            &::after {
+                position: absolute;
+                content: '';
+                box-sizing: border-box;
+                width: 200%;
+                height: 0%;
+                left: 50%;
+                top: 50%;
+                background-color: rgba(255, 255, 255, .3);
+                transform: translate(-50%, -50%) rotate(-45deg);
+                z-index: 1;
+                transition: 0.5s;
+                opacity: 1;
+            }
+
+            &:hover::after {
+                height: 100%;
+                opacity: 0;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('/assets/images/about-bg-dot-shape.svg');
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 30%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: -1;
+        }
+    }
+
+    .about-content {
+        padding: 0 40px;
+
+        span {
+            font-size: var(--fs-18);
+            color: var(--secondary-color);
+            display: inline-block;
+            font-weight: var(--fw-700);
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: var(--fs-45);
+            padding: 10px 0;
+            font-weight: var(--fw-800);
+            color: var(--black-color);
+        }
+
+        p {
+            font-size: var(--fs-16);
+            color: var(--sub-text);
+        }
+
+        a {
+            margin-top: 25px;
+            font-size: var(--fs-18);
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            display: inline-block;
+            padding: 17px 30px;
+            border: 1px solid transparent;
+            transition: 0.5s;
+            text-transform: uppercase;
+
+            &:hover {
+                border: 1px solid var(--primary-color);
+                background-color: transparent;
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+.service-main {
+    padding: 100px 0;
+    background-color: var(--white-color);
+}
