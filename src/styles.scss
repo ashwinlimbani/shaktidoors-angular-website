@@ -27,7 +27,7 @@ body {
     font-family: 'Plus Jakarta Sans';
     font-size: var(--fs-16);
     color: var(--black-color);
-    --bs-body-bg: #fbfaf3 !important;
+    --bs-body-bg: var(--white-color) !important;
 }
 
 /* Grid system */

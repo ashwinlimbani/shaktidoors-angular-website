@@ -1,5 +1,6 @@
 .container {
     margin-top: 20px;
+    background: var(--white-color);
 }
 
 .logo-container {
@@ -25,6 +26,14 @@ td {
 img.doors {
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .logo {

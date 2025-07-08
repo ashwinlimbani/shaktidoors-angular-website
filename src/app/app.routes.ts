@@ -11,5 +11,9 @@ export const routes: Routes = [
   { path: 'services', component: ServicesComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'contact', component: ContactComponent },
+  {
+    path: 'qr',
+    loadChildren: () => import('./qr/qr.module').then((m) => m.QrModule),
+  },
   { path: '**', redirectTo: '' },
 ];
