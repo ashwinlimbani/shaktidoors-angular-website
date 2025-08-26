@@ -2,3 +2,26 @@
     padding: 100px 0;
     background-color: var(--white-color);
 }
+
+@media screen and (max-width: 768px) {
+    .banner .banner-content {
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    .range {
+        padding: 40px 0;
+
+        .title {
+            padding-bottom: 20px;
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

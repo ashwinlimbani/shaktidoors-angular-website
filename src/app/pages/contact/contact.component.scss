@@ -189,12 +189,6 @@
         margin-right: 0;
     }
 
-    [class*="col-"] {
-        width: 100% !important;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     .banner {
         padding: 36px 0;
 
@@ -216,6 +210,7 @@
 
         p {
             font-size: 12px;
+            margin-bottom: 10px;
         }
     }
 
