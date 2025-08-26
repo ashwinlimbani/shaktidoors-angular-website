@@ -41,68 +41,6 @@
     }
 }
 
-.service-main {
-    padding: 80px 0;
-    background-color: var(--white-color);
-
-    .section-title {
-        text-align: center;
-        margin-bottom: 50px;
-
-        span {
-            font-size: var(--fs-18);
-            color: var(--secondary-color);
-            display: inline-block;
-            font-weight: var(--fw-700);
-            text-transform: uppercase;
-        }
-
-        h2 {
-            font-size: var(--fs-45);
-            padding: 10px 0;
-            font-weight: var(--fw-800);
-            color: var(--black-color);
-        }
-
-        p {
-            font-size: var(--fs-16);
-            color: var(--sub-text);
-        }
-    }
-
-    .service-card {
-        padding: 30px;
-        background-color: var(--white-color);
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        margin-bottom: 30px;
-
-        &:hover {
-            transform: translateY(-10px);
-        }
-
-        i {
-            font-size: 48px;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            font-size: var(--fs-20);
-            margin-bottom: 15px;
-            color: var(--black-color);
-            font-weight: var(--fw-700);
-        }
-
-        p {
-            font-size: var(--fs-16);
-            color: var(--sub-text);
-            line-height: 1.6;
-        }
-    }
-}
-
 .quesion {
     padding: 100px 0;
     background-color: var(--white-color);
@@ -120,12 +58,6 @@
         margin-right: 0;
     }
 
-    [class*="col-"] {
-        width: 100% !important;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     .banner {
         padding: 36px 0;
 
@@ -138,33 +70,18 @@
         }
     }
 
-    .service-main {
-        padding: 18px 0;
-
-        .section-title {
-            h2 {
-                font-size: 16px;
-            }
-
-            p,
-            span {
-                font-size: 12px;
+    .service-main{
+        padding: 40px 0;
+        .title{
+            h2{
+                font-size: 18px;
             }
         }
 
-        .service-card {
-            padding: 10px;
-
-            h3 {
-                font-size: 14px;
-            }
-
-            p {
-                font-size: 12px;
-            }
-
-            i {
-                font-size: 24px;
+        .services{
+            padding-top: 0;
+            .service{
+                margin: 20px 0;
             }
         }
     }

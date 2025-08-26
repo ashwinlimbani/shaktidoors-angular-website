@@ -11,11 +11,16 @@
             <div class="col-10">
                 <!-- Hamburger for mobile -->
                 <button class="hamburger" type="button" (click)="toggleMenu()">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
                 <div class="menu" [class.open]="isMenuOpen">
+                    <!-- Close button for mobile menu -->
+                    <button class="close-menu" type="button" (click)="closeMenu()" *ngIf="isMenuOpen">
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="d-flex justify-end" [class.mobile]="isMenuOpen">
                         <li>
                             <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">
